@@ -1,16 +1,59 @@
-# React + Vite
+# TechDesk
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+TechDesk is an AI-powered IT support assistant that helps users troubleshoot common technical issues.
 
-Currently, two official plugins are available:
+Users can describe a problem, and TechDesk analyzes the issue, identifies the category and priority, suggests a possible cause, provides troubleshooting steps, and generates a professional support response.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- AI-powered IT troubleshooting
+- Issue categorization
+- Priority classification
+- Possible cause analysis
+- Step-by-step troubleshooting guidance
+- Professional support response generation
+- Quick example buttons for Wi-Fi, login, and printer issues
+- Clear/reset functionality
+- Clean technology-inspired interface
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the Oxlint configuration
+- React
+- JavaScript
+- Node.js
+- Express.js
+- OpenAI API
+- HTML
+- CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## How It Works
+
+1. The user enters an IT problem.
+2. The React frontend sends the problem to the Node.js backend.
+3. The backend sends the problem to the OpenAI API.
+4. The AI analyzes the issue.
+5. TechDesk displays the category, priority, possible cause, troubleshooting steps, and suggested response.
+
+## Example
+
+**Problem:**
+
+My office printer says offline and I cannot print.
+
+**TechDesk Analysis:**
+
+- Category: Printer
+- Priority: Medium
+- Possible Cause: The printer may be disconnected from the network or set to offline.
+- Troubleshooting Steps: TechDesk provides several recommended steps.
+- Suggested Response: A professional support response is generated for the user.
+
+## Security
+
+The OpenAI API key is stored in an environment variable and is excluded from GitHub using `.gitignore`.
+
+## Author
+
+Sadaf Mohammad
+
+© 2026 Sadaf Mohammad
