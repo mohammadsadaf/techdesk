@@ -16,13 +16,16 @@ function App() {
     setResult("");
 
     try {
-      const response = await fetch("http://localhost:3000/api/analyze", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ problem }),
-      });
+      const response = await fetch(
+        "https://techdesk-9qfs.onrender.com/api/analyze",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ problem }),
+        }
+      );
 
       const data = await response.json();
       if (!response.ok) {
